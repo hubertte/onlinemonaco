@@ -4484,7 +4484,9 @@
                 }
             });
             var getText = function() {
-                return editor.getValue()
+                const text = editor.getValue()
+                text = text.replace(/[\r\n\t]+/g, ' ').replace(/\s{2,}/g, ' ').trim();
+                return text
             };
             var setText = function(a) {
                 editor.setValue(a)

@@ -1295,9 +1295,10 @@
 				};
 getText = function() {
     var text = editor.getValue()
-    text = text.replace(/\\|\r|\n|\t/g, '');
+    text = text.replace(/\\|\r|\n|\t/g, "");
     return text;
 }
+
 
 				document.getElementsByClassName("lines-content monaco-editor-background")[0].style.backgroundImage="url()"
                 document.getElementsByClassName("margin")[0].style.backgroundImage="url()"
